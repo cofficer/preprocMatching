@@ -12,7 +12,7 @@ ctr = 1;
 for isub = 1:length(runcfg.batchlists)
     eval(runcfg.batchlists{isub}); %load in batchlist file, batch, PREOUT and PREIN come out
     
-    PREIN = fullfile('/home/meindertsmat/data/Matching/MEG/raw/', PRE);
+    PREIN = fullfile('/mnt/homes/home024/meindertsmat/data/Matching/MEG/raw/', PRE);
     %PREIN = fullfile('/home/pmurphy/meg_data/');
     PREOUT = fullfile('/home/chrisgahn/Documents/MATLAB/preprocessed/', PRE); %/Users/nkloost1/Dropbox/PROJECTS/MIBmeg/MIBmeganalysis/preproc/
     %         PREOUT = fullfile('/Users/nkloost1/Dropbox/PROJECTS/MIBmeg/MIBmeganalysis/preproc/', PRE); %
