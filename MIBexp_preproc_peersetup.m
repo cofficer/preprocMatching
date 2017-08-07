@@ -34,7 +34,7 @@ for isub = 1:length(runcfg.batchlists)
             cfg1{ctr}.headerfile = cfg1{ctr}.datafile;
             cfg1{ctr}.headerformat = ft_filetype(cfg1{ctr}.datafile); % 'neuromag_fif'
             cfg1{ctr}.channel =  {'MEG','EOG', '-MEG*1'}; %exclude magnetometers! % batch(irun).channel
-            cfg1{ctr}.fsample = 1250;
+            cfg1{ctr}.fsample = 1200;
             cfg1{ctr}.trialfun = 'trialfun_MatchingMEG17nov'; %sortTrials_MIBexperiment
             cfg1{ctr}.trialdef.trg = runcfg.trigger{itrg}; %baseline, stim or resp
             cfg1{ctr}.dftfilter = 'yes';
@@ -86,7 +86,7 @@ for isub = 1:length(runcfg.batchlists)
             
             %resampling parameters
             cfg3{ctr}.resample = 'yes';
-            cfg3{ctr}.fsample = 1250;
+            cfg3{ctr}.fsample = 1200;
             cfg3{ctr}.resamplefs = 500;
             cfg3{ctr}.detrend = 'no'; % ft: not good for evoked fields . . .???
             
